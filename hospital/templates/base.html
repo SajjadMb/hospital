@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'accounts/style.css' %}" type="text/css">
+
+        {% block head %}
+          <title>base</title>
+        {% endblock %}
+    </head>
+
+    <body>
+
+
+        <!-- Start Top Search --
+        <div class="top-search" style="display: none;">
+            <div class="container">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                    <input class="form-control" placeholder="Type something ann hit enter" type="text">
+                    <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                </div>
+            </div>
+        </div>
+        <!-- End Top Search -->
+
+
+
+
+        <nav class="navbar navbar-inverse navbar-fixed no-background bootsnav on no-full">
+
+
+            <!-- Start Header Navigation -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#brand"><img src="{% static 'accounts/image/HealthLand.png' %}"  class="img-rounded"  alt=""></a>
+            </div>
+            <!-- End Header Navigation -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Doctors </a>
+                        <ul class="dropdown-menu animated fadeOutUp" style="display: none; opacity: 1;">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About</a>
+                                <ul class="dropdown-menu animated fadeOutUp" style="display: none; opacity: 1;">
+                                    <li><a href="about.html">About Alt1</a></li>
+                                    <li><a href="about-alt1.html">About Alt2</a></li>
+                                    <li><a href="about-alt2.html">About Alt3</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Services </a>
+                                <ul class="dropdown-menu animated">
+                                    <li><a href="services.html">Services Alt1</a></li>
+                                    <li><a href="services-alt1.html">Services Alt2</a></li>
+                                    <li><a href="services-alt2.html">Services Alt3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="faq.html">Faq</a></li>
+							<li><a href="site-map.html">Site map</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                                <ul class="dropdown-menu animated">
+                                    <li><a href="#">Menu alt</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Submenu</a>
+                                        <ul class="dropdown-menu animated">
+                                            <li><a href="#">Menu alt</a></li>
+                                            <li><a href="#">Menu alt</a></li>
+                                            <li><a href="#">Menu alt</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Menu alt</a></li>
+                                    <li><a href="#">Menu alt</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service</a>
+                        <ul class="dropdown-menu animated">
+							<li><a href="blog-leftsidebar.html">Blog left sidebar</a></li>
+							<li><a href="blog-rightsidebar.html">Blog right sidebar</a></li>
+							<li><a href="blog-rightsidebar.html">Blog magazine</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Single Post</a>
+                                <ul class="dropdown-menu animated">
+                                    <li><a href="singlepost-leftsidebar.html">Singlepost left sidebar</a></li>
+                                    <li><a href="singlepost-rightsidebar.html">Singlepost right sidebar</a></li>
+                                    <li><a href="singlepost-magazine.html">Singlepost magazine</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Portfolio </a>
+                        <ul class="dropdown-menu animated">
+                            <li><a href="portfolio-alt1.html">Portfolio alt1</a></li>
+							<li><a href="portfolio-alt2.html">Portfolio alt2</a></li>
+							<li><a href="portfolio-alt3.html">Portfolio alt3</a></li>
+							<li><a href="portfolio-alt4.html">Portfolio alt4</a></li>
+							<li><a href="portfolio-alt5.html">Portfolio alt5</a></li>
+							<li><a href="portfolio-alt6.html">Portfolio alt6</a></li>
+							<li><a href="portfolio-alt7.html">Portfolio alt7</a></li>
+							<li><a href="portfolio-alt8.html">Portfolio alt8</a></li>
+							<li><a href="portfolio-alt9.html">Portfolio alt9</a></li>
+							<li><a href="portfolio-alt10.html">Portfolio alt10</a></li>
+							<li><a href="portfolio-detail.html">Portfolio detail</a></li>
+							<li><a href="portfolio-detail-alt1.html">Portfolio detail alt1</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown megamenu-fw">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Components </a>
+                        <ul class="dropdown-menu megamenu-content animated" role="menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-menu col-md-3">
+                                        <h6 class="title">Interactive</h6>
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <li><a href="call-to-action.html"><i class="fa fa-microphone"></i> Call to action</a></li>
+                                                <li><a href="counter.html"><i class="fa fa-pie-chart"></i> Counter</a></li>
+                                                <li><a href="maps.html"><i class="fa fa-map-o"></i> Google maps</a></li>
+                                                <li><a href="media-responsive.html"><i class="fa fa-film"></i> Media responsive</a></li>
+                                                <li><a href="modal.html"><i class="fa fa-external-link"></i> Modal</a></li>
+                                                <li><a href="process.html"><i class="fa fa-hourglass-1"></i> Process</a></li>
+                                                <li><a href="progress.html"><i class="fa fa-server"></i> Progress bar</a></li>
+                                                <li><a href="pricing.html"><i class="fa fa-shopping-bag"></i> Pricing</a></li>
+                                                <li><a href="team.html"><i class="fa fa-users"></i> Team</a></li>
+                                                <li><a href="testimoni.html"><i class="fa fa-comments"></i> Testimoni</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- end col-3 -->
+                                    <div class="col-menu col-md-3">
+                                        <h6 class="title">Elements</h6>
+                                        <div class="content">
+                                            <ul class="menu-col">
+												<li><a href="accordion.html"><i class="fa fa-navicon"></i> Accordion</a></li>
+                                                <li><a href="alert.html"><i class="fa fa-info-circle"></i> Alert</a></li>
+                                                <li><a href="button.html"><i class="fa fa-download"></i> Button</a></li>
+                                                <li><a href="form.html"><i class="fa fa-unlock-alt"></i> Form</a></li>
+                                                <li><a href="icon.html"><i class="fa fa-flag"></i> Icons style</a></li>
+                                                <li><a href="icon-box.html"><i class="fa fa-inbox"></i> Icons with box</a></li>
+												<li><a href="icon-text.html"><i class="fa fa-star"></i> Icons with text</a></li>
+                                                <li><a href="images.html"><i class="fa fa-image"></i> Images style</a></li>
+												<li><a href="pagination.html"><i class="fa fa-sort-numeric-asc"></i> Pagination</a></li>
+												<li><a href="tab.html"><i class="fa fa-tasks"></i> Tab style</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- end col-3 -->
+                                    <div class="col-menu col-md-3">
+                                        <h6 class="title">Typography &amp; MLsc</h6>
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
+                                                <li><a href="heading.html"><i class="fa fa-header"></i> Heading</a></li>
+                                                <li><a href="blockquote.html"><i class="fa fa-quote-left"></i> Blockquote</a></li>
+                                                <li><a href="columns.html"><i class="fa fa-th"></i> Columns</a></li>
+                                                <li><a href="divider.html"><i class="fa fa-file-text-o"></i> Separators</a></li>
+                                                <li><a href="dropcaps.html"><i class="fa fa-th-list"></i> Dropcaps</a></li>
+                                                <li><a href="highlights.html"><i class="fa fa-list-alt"></i> Highlights</a></li>
+                                                <li><a href="list.html"><i class="fa fa-list-ol"></i> List style</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- end col-3 -->
+                                    <div class="col-menu col-md-3">
+                                        <h6 class="title">Speciality page</h6>
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <li><a href="error404.html"><i class="fa fa-warning"></i> Error 404</a></li>
+                                                <li><a href="maintenance.html"><i class="fa fa-cogs"></i> Maintenance</a></li>
+                                                <li><a href="signin.html"><i class="fa fa-sign-in"></i> Signin</a></li>
+                                                <li><a href="signup.html"><i class="fa fa-sign-out"></i> Signin</a></li>
+												<li><a href="underconstruction.html"><i class="fa fa-wrench"></i> Underconstruction</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- end col-3 -->
+                                </div><!-- end row -->
+                            </li>
+                        </ul>
+                    </li>
+
+					<li><a href="contact.html"> Contact us </a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Sign In/Register </a>
+                        <ul class="dropdown-menu animated">
+                            <li><a href="portfolio-alt1.html">Portfolio alt1</a></li>
+							<li><a href="portfolio-alt2.html">Portfolio alt2</a></li>
+							<li><a href="portfolio-alt3.html">Portfolio alt3</a></li>
+							<li><a href="portfolio-alt4.html">Portfolio alt4</a></li>
+							<li><a href="portfolio-alt5.html">Portfolio alt5</a></li>
+							<li><a href="portfolio-alt6.html">Portfolio alt6</a></li>
+							<li><a href="portfolio-alt7.html">Portfolio alt7</a></li>
+							<li><a href="portfolio-alt8.html">Portfolio alt8</a></li>
+							<li><a href="portfolio-alt9.html">Portfolio alt9</a></li>
+							<li><a href="portfolio-alt10.html">Portfolio alt10</a></li>
+							<li><a href="portfolio-detail.html">Portfolio detail</a></li>
+							<li><a href="portfolio-detail-alt1.html">Portfolio detail alt1</a></li>
+                        </ul>
+                    </li>
+                </ul>
+			</div>
+        </div>
+    </nav>
+
+
+        {% block body %}
+
+
+            <h1>base in base</h1>
+        {% endblock %}
+    </body>
+
+</html>
+
+
+

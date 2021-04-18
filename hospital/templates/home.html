@@ -1,0 +1,48 @@
+<!-- home.html -->
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+
+
+<div id="position">
+            <div class="container">
+               <div class="row">
+                <div class="col-lg-6 col-lg-offset-3">
+                    <div class="banner-text text-center banner-background banner">
+                      <h1 class="white">Hi {{ user.name }}!</h1>
+                      <p>Entrust Your Health Our Doctors</p>
+                      <a href="#" class="btn btn-appoint">Make an Appointment</a>
+			<p><a href="{% url 'logout' %}">logout</a></p>
+                    </div>
+                    <div class="overlay-detail text-center">
+                      <a href="#service"><i class="fa fa-angle-down"></i></a>
+                    </div>
+                </div>
+               </div>
+            </div>
+</div>
+
+{% else %}
+  
+<div id="position">
+            <div class="container">
+               <div class="row">
+                <div class="col-lg-6 col-lg-offset-3">
+                    <div class="banner-text text-center banner-background banner">
+                      <h1 class="white">We Care <br>For Your Health</h1>
+                      <p>Entrust Your Health Our Doctors<br>You Can Login From Here!</p>
+                      <a href="{% url 'login' %}" class="btn btn-appoint">Login</a>
+                    </div>
+                    <div class="overlay-detail text-center">
+                      <a href="#service"><i class="fa fa-angle-down"></i></a>
+                    </div>
+                </div>
+               </div>
+            </div>
+</div>
+{% endif %}
+{% endblock %}
+
